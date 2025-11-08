@@ -22,7 +22,7 @@ const HowWork = () => {
             </p>
             <ArrowBTN className={`!text-[#2405F2] text-[18px] leading-8 font-medium`}>Get in touch with us</ArrowBTN>
           </div>
-          <div className="flex flex-col  md:grid grid-cols-2">
+          <div className="grid grid-cols-2 gap-2">
             <Box src={pointer1} h1={"Strategy"} />
             <Box src={pointer2} h1={"Wireframing"} />
             <Box src={pointer3} h1={"Design"} />
