@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-const ArrowBTN = ({children,className}) => {
+const ArrowBTN = ({ children, className }) => {
+  const [tapped, setTapped] = useState(false);
+
+  const handleTap = () => {
+    setTapped(true);
+    setTimeout(() => setTapped(false), 300); // reset after animation
+  };
+
   return (
-    <>
-      <div className="flex items-center gap-4 group">
-        <button className={`text-white ${className}`}>{children}</button>
-        <svg
-          className={`w-6 h-6 mt-1 text-white fill-current transform transition-transform duration-300 ease-in-out group-hover:translate-x-3 ${className} `}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 640 640"
-        >
-          <path d="M598.6 342.6C611.1 330.1 611.1 309.8 598.6 297.3L470.6 169.3C458.1 156.8 437.8 156.8 425.3 169.3C412.8 181.8 412.8 202.1 425.3 214.6L498.7 288L64 288C46.3 288 32 302.3 32 320C32 337.7 46.3 352 64 352L498.7 352L425.3 425.4C412.8 437.9 412.8 458.2 425.3 470.7C437.8 483.2 458.1 483.2 470.6 470.7L598.6 342.7z" />
-        </svg>
-      </div>
-    </>
+    <div
+      className="flex items-center gap-4 group select-none"
+      onClick={handleTap} // works on mobile tap
+    >
+      <button className={`text-white ${className}`}>{children}</button>
+      <svg
+        className={`w-6 h-6 mt-1 text-white fill-current transform transition-transform duration-300 ease-in-out 
+        ${tapped ? "translate-x-3" : ""} group-hover:translate-x-3 ${className}`}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 640"
+      >
+        <path d="M598.6 342.6C611.1 330.1 611.1 309.8 598.6 297.3L470.6 169.3C458.1 156.8 437.8 156.8 425.3 169.3C412.8 181.8 412.8 202.1 425.3 214.6L498.7 288L64 288C46.3 288 32 302.3 32 320C32 337.7 46.3 352 64 352L498.7 352L425.3 425.4C412.8 437.9 412.8 458.2 425.3 470.7C437.8 483.2 458.1 483.2 470.6 470.7L598.6 342.7z" />
+      </svg>
+    </div>
   );
 };
 

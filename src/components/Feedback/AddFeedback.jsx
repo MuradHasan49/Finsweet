@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import FeedbackImg from "../../assets/Feedback/profile.png"; // your image
 
 const FeedbackSlider = () => {
@@ -30,41 +30,55 @@ const FeedbackSlider = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex + 1 + slides.length) % slides.length
-    );
-    console.log(handlePrev);
+    setCurrentIndex((prevIndex) => (prevIndex + 1 + slides.length) % slides.length);
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1) % slides.length);
-    console.log(handleNext);
+  };
+
+  // Touch handlers for swipe
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const distance = touchStartX.current - touchEndX.current;
+    const swipeThreshold = 50; // minimum distance for swipe
+    if (distance > swipeThreshold) handlePrev(); // swipe left → next
+    if (distance < -swipeThreshold) handleNext(); // swipe right → prev
   };
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div
+      className="relative w-full overflow-hidden"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       {/* Slider container */}
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="min-w-full flex flex-col  p-8">
-            <p className="md:text-3xl font-medium text-[#282938] max-w-2xl">
-              {slide.text}
-            </p>
-
+          <div key={index} className="min-w-full flex flex-col p-8">
+            <p className="md:text-3xl font-medium text-[#282938] max-w-2xl">{slide.text}</p>
             <div className="flex justify-between items-center mt-12 gap-6">
               <div className="mb-10">
-                <img src={slide.img} alt={slide.name} className=" shadow-lg" />
+                <img src={slide.img} alt={`Slide ${index}`} className="shadow-lg" />
               </div>
               <div className="flex gap-3">
-                <button
-                  onClick={handlePrev}
-                  className=" transform -translate-y-1/2"
-                >
+                {/* Left button */}
+                <button onClick={handlePrev} className="transform -translate-y-1/2">
                   <svg
                     className="w-10 h-10 bg-blue-500 text-white fill-current rounded-full transition-transform duration-300 ease-in-out hover:scale-110"
                     xmlns="http://www.w3.org/2000/svg"
@@ -75,10 +89,7 @@ const FeedbackSlider = () => {
                 </button>
 
                 {/* Right button */}
-                <button
-                  onClick={handleNext}
-                  className=" transform -translate-y-1/2"
-                >
+                <button onClick={handleNext} className="transform -translate-y-1/2">
                   <svg
                     className="w-10 h-10 bg-blue-500 text-white fill-current rounded-full transition-transform duration-300 ease-in-out hover:scale-110"
                     xmlns="http://www.w3.org/2000/svg"
@@ -92,8 +103,6 @@ const FeedbackSlider = () => {
           </div>
         ))}
       </div>
-
-      {/* Left button */}
     </div>
   );
 };

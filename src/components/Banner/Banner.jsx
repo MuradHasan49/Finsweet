@@ -9,15 +9,15 @@ const Banner = () => {
       <div className="bg-[#1C1E53] py-16 md:py-32">
         <div className="container">
           <div className="grid grid-cols-1 md:grid md:grid-cols-2 gap-15">
-            <div className="flex flex-col items-center lg:w-[582px] h-full ">
+            <div className="flex flex-col items-center md:items-start  lg:w-[582px] h-full ">
               <h1 className="text-[54px] font-semibold leading-[74px] text-white">
                 Building stellar websites for early startups
               </h1>
               <p className="opacity-70 mt-6 text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
-              <div className="mt-12">
-                <div className="flex gap-10">
+              <div className=" mt-12">
+                <div className="flex  gap-10">
                   <Button className="bg-[#FCD980] ">View our work</Button>
                   <ArrowBTN>View Pricing</ArrowBTN>
                 </div>
