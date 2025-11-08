@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './components/Banner/Banner'
+import Blog from './components/Blog/Blog'
 import Dbanner from './components/DownBanner/Dbanner'
 import FeaturesBox from './components/Features/FeaturesBox'
 import Feedback from './components/Feedback/Feedback'
@@ -22,6 +23,7 @@ function App() {
     <Feedback/>
     <Questions/>
     <Dbanner/>
+    <Blog/>
     </>
   )
 }
