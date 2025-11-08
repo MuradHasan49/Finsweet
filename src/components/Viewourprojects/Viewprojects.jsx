@@ -28,7 +28,7 @@ const Viewprojects = () => {
                 before:w-0 before:h-full before:rounded-[11px]
                 before:bg-gradient-to-b before:from-[#1C1E53]/60 before:to-[#1C1E53]/90
                 before:transition-all before:duration-500
-                group-hover:before:w-[415px] active:before:w-[415px] focus:before:w-[415px]
+                group-hover:before:w-[415px] active:before:w-full focus:before:w-full
                 flex flex-col justify-end items-start px-10 py-10
               "
             >
@@ -67,14 +67,14 @@ const Viewprojects = () => {
 
               <div
                 className="
-                  absolute inset-0 rounded-[11px] overflow-hidden
-                  before:content-[''] before:absolute before:inset-0
-                  before:w-[405px] h-full before:h-0 before:rounded-[11px]
-                  before:bg-gradient-to-b before:from-[#1C1E53]/60 before:to-[#1C1E53]/90
-                  before:transition-all before:duration-500
-                  group-hover:before:h-full group-active:before:h-full group-focus:before:h-full
-                  flex flex-col justify-end items-start px-8 py-8
-      "
+    absolute inset-0 rounded-[11px] overflow-hidden
+    before:content-[''] before:absolute before:inset-0
+    before:w-full before:h-0 before:rounded-[11px]
+    before:bg-gradient-to-b before:from-[#1C1E53]/60 before:to-[#1C1E53]/90
+    before:transition-all before:duration-500
+    group-hover:before:h-full group-active:before:h-full group-focus:before:h-full 
+    flex flex-col justify-end items-start px-8 py-8
+  "
               >
                 <div
                   className="
@@ -106,21 +106,21 @@ const Viewprojects = () => {
 
               <div
                 className="
-                  absolute inset-0 rounded-[11px] overflow-hidden
-                  before:content-[''] before:absolute before:inset-0
-                  before:w-[405px] h-full before:h-0 before:rounded-[11px]
-                  before:bg-gradient-to-b before:from-[#1C1E53]/60 before:to-[#1C1E53]/90
-                  before:transition-all before:duration-500
-                  group-hover:before:h-full group-active:before:h-full group-focus:before:h-full
-                  flex flex-col justify-end items-start px-8 py-8
-      "
+    absolute inset-0 rounded-[11px] overflow-hidden
+    before:content-[''] before:absolute before:inset-0
+    before:w-full before:h-0 before:rounded-[11px]
+    before:bg-gradient-to-b before:from-[#1C1E53]/60 before:to-[#1C1E53]/90
+    before:transition-all before:duration-500
+    group-hover:before:h-full group-active:before:h-full group-focus:before:h-full 
+    flex flex-col justify-end items-start px-8 py-8
+  "
               >
                 <div
                   className="
-                pacity-0 translate-y-4 transition-all duration-500 ease-in-out
-                roup-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100
-                roup-hover:translate-y-0 group-active:translate-y-0 group-focus:translate-y-0
-                ext-white z-10
+          opacity-0 translate-y-4 transition-all duration-500 ease-in-out
+          group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100
+          group-hover:translate-y-0 group-active:translate-y-0 group-focus:translate-y-0
+          text-white z-10
         "
                 >
                   <div className="flex flex-col gap-3">
