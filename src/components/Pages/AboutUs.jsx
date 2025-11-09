@@ -261,10 +261,9 @@ const AboutUs = () => {
                   <img
                     src={FooterImg2}
                     alt="/"
-                    
+
                     className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
                   />
-
                   <div className="absolute inset-0 bg-gradient-to-t from-indigo-800/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center mt-20 justify-center gap-4">
                     <a
                       href="#"
