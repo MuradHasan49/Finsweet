@@ -180,7 +180,7 @@ const AboutUs = () => {
           <Box
             className={"bg-blue-100/40"}
             icon={iocn6}
-            h1={"Uses Client First"}
+            h1={"Customize with ease"}
             p={
               "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. "
             }
@@ -188,7 +188,7 @@ const AboutUs = () => {
           <Box
             className={"bg-blue-100/40"}
             icon={iocn3}
-            h1={"Uses Client First"}
+            h1={"Perfectly Responsive"}
             p={
               "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. "
             }
@@ -196,7 +196,7 @@ const AboutUs = () => {
           <Box
             className={"bg-blue-100/40"}
             icon={iocn}
-            h1={"Uses Client First"}
+            h1={"Friendly Support"}
             p={
               "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. "
             }
