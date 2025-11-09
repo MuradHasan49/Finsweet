@@ -259,7 +259,7 @@ const AboutUs = () => {
                 {/* Profile Image Wrapper */}
                 <div className="relative mx-auto w-40 h-40 rounded-full overflow-hidden group">
                   <img
-                    src={FooterImg}
+                    src={FooterImg2}
                     alt="/"
                     className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
                   />
@@ -288,9 +288,9 @@ const AboutUs = () => {
 
                 {/* Name & Title */}
                 <h3 className="text-lg font-semibold mt-5 text-gray-800">
-                  John Smith
+                  Simon Adams
                 </h3>
-                <p className="text-gray-500">CEO</p>
+                <p className="text-gray-500">CTO</p>
               </div>
             </div>
 
@@ -299,7 +299,7 @@ const AboutUs = () => {
                 {/* Profile Image Wrapper */}
                 <div className="relative mx-auto w-40 h-40 rounded-full overflow-hidden group">
                   <img
-                    src={FooterImg}
+                    src={FooterImg3}
                     alt="/"
                     className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
                   />
@@ -328,9 +328,9 @@ const AboutUs = () => {
 
                 {/* Name & Title */}
                 <h3 className="text-lg font-semibold mt-5 text-gray-800">
-                  John Smith
+                  Paul Jones
                 </h3>
-                <p className="text-gray-500">CEO</p>
+                <p className="text-gray-500">Design Lead</p>
               </div>
             </div>
 
@@ -339,7 +339,7 @@ const AboutUs = () => {
                 {/* Profile Image Wrapper */}
                 <div className="relative mx-auto w-40 h-40 rounded-full overflow-hidden group">
                   <img
-                    src={FooterImg}
+                    src={FooterImg4}
                     alt="/"
                     className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
                   />
@@ -368,9 +368,9 @@ const AboutUs = () => {
 
                 {/* Name & Title */}
                 <h3 className="text-lg font-semibold mt-5 text-gray-800">
-                  John Smith
+                  Sara Hardin
                 </h3>
-                <p className="text-gray-500">CEO</p>
+                <p className="text-gray-500">Project Manager</p>
               </div>
             </div>
           </div>
