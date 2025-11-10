@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Logo1 from "../../assets/BannerImg/logo1.png";
 import Button from "../Global/Button";
+import { Link } from "react-router-dom";
+
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,25 +20,25 @@ const Navbar = () => {
         <div className="hidden md:flex gap-12 items-center text-[#BBBBCB]">
           <ul className="flex gap-8">
             <li className="hover:text-white cursor-pointer transition-colors duration-300">
-              Home
+              <Link to="/"> Home</Link>
             </li>
             <li className="hover:text-white cursor-pointer transition-colors duration-300">
-              About us
+              <Link to="/AboutUs"> About us</Link>
             </li>
             <li className="hover:text-white cursor-pointer transition-colors duration-300">
-              Features
+              <Link to="/"> Features</Link>
             </li>
             <li className="hover:text-white cursor-pointer transition-colors duration-300">
-              Pricing
+              <Link to="/Pricing"> Pricing</Link>
             </li>
             <li className="hover:text-white cursor-pointer transition-colors duration-300">
-              FAQ
+              <Link to="/FAQ">FAQ</Link>
             </li>
             <li className="hover:text-white cursor-pointer transition-colors duration-300">
-              Blog
+              <Link to="/Blog"> Blog</Link>
             </li>
           </ul>
-          <Button>Contact us</Button>
+          <Link to="/ContactUS"><Button>Contact us</Button></Link>
         </div>
 
         {/* Mobile Hamburger */}
@@ -86,31 +89,30 @@ const Navbar = () => {
         }`}
       >
         <ul className="flex flex-col items-center gap-4">
-          <li className="hover:text-white active:text-white focus:text-white cursor-pointer transition-colors duration-300">
-            Home
-          </li>
-          <li className="hover:text-white active:text-white focus:text-white cursor-pointer transition-colors duration-300">
-            About us
-          </li>
-          <li className="hover:text-white active:text-white focus:text-white cursor-pointer transition-colors duration-300">
-            Features
-          </li>
-          <li className="hover:text-white active:text-white focus:text-white cursor-pointer transition-colors duration-300">
-            Pricing
-          </li>
-          <li className="hover:text-white active:text-white focus:text-white cursor-pointer transition-colors duration-300">
-            FAQ
-          </li>
-          <li className="hover:text-white active:text-white focus:text-white cursor-pointer transition-colors duration-300">
-            Blog
-          </li>
+          <li className="hover:text-white cursor-pointer transition-colors duration-300">
+              <Link to="/"> Home</Link>
+            </li>
+            <li className="hover:text-white cursor-pointer transition-colors duration-300">
+              <Link to="/AboutUs"> About us</Link>
+            </li>
+            <li className="hover:text-white cursor-pointer transition-colors duration-300">
+              <Link to="#"> Features</Link>
+            </li>
+            <li className="hover:text-white cursor-pointer transition-colors duration-300">
+              <Link to="/Pricing"> Pricing</Link>
+            </li>
+            <li className="hover:text-white cursor-pointer transition-colors duration-300">
+              <Link to="/FAQ">FAQ</Link>
+            </li>
+            <li className="hover:text-white cursor-pointer transition-colors duration-300">
+              <Link to="/Blog"> Blog</Link>
+            </li>
         </ul>
         <div
           className={`mt-4 flex justify-center transition-opacity duration-700 ${
             isOpen ? "opacity-100" : "opacity-0"
           }`}
         >
-          <Button>Contact us</Button>
         </div>
       </div>
     </div>

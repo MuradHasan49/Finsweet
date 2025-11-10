@@ -17,27 +17,100 @@ import ReadBlog from "./components/Pages/ReadBlog";
 import Questions from "./components/questions/Questions";
 import Viewprojects from "./components/Viewourprojects/Viewprojects";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <>
+          <Nav />
+          <Banner />
+          <HowWork />
+          <Viewprojects />
+          <FeaturesBox />
+          <Feedback />
+          <Questions />
+          <Dbanner />
+          <Blog />
+          <Footer />
+          <FooterCopy />
+        </>
+      ),
+    },
+    {
+      path: "/AboutUs",
+      element: (
+        <>
+
+          <Nav />
+          <AboutUs />
+          <Footer />
+          <FooterCopy />
+        </>
+      ),
+    },
+    {
+      path: "/Pricing",
+      element: (
+        <>
+          <Nav />
+          <Pricing />
+          <Footer />
+          <FooterCopy />
+        </>
+      ),
+    },
+    {
+      path: "/Blog",
+      element: (
+        <>
+          <Nav />
+           <BlogPage />
+          <Footer />
+          <FooterCopy />
+        </>
+      ),
+    },
+    {
+      path: "/ReadMore",
+      element: (
+        <>
+          <Nav />
+           <ReadBlog />
+          <Footer />
+          <FooterCopy />
+        </>
+      ),
+    },
+    {
+      path: "/FAQ",
+      element: (
+        <>
+          <Nav />
+           <PrivacyAndPolicy />
+          <Footer />
+          <FooterCopy />
+        </>
+      ),
+    },
+    {
+      path: "/ContactUS",
+      element: (
+        <>
+          <Nav />
+        <ContactUs />
+          <Footer />
+          <FooterCopy />
+        </>
+      ),
+    },
+  ]);
+
   return (
     <>
-      <Nav />
-      <Banner />
-      <HowWork />
-      <Viewprojects />
-      <FeaturesBox />
-      <Feedback />
-      <Questions />
-      <Dbanner />
-      <Blog />
-      <Footer />
-      <FooterCopy />
-
-      <AboutUs />
-      <Pricing/>
-      <ContactUs/>
-      <PrivacyAndPolicy/>
-      <BlogPage/>
-      <ReadBlog/>
+      <RouterProvider router={router} />;{/* <AboutUs /> */}
     </>
   );
 }

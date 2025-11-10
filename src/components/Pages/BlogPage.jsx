@@ -4,6 +4,8 @@ import BannerImg from "../../assets/Blog/people-working-in-front-of-computer-318
 import ArrowBTN from "../Banner/ArrowBTN";
 import Blog from "../Blog/Blog";
 
+import { Link } from "react-router-dom";
+
 const BlogPage = () => {
   return (
     <>
@@ -31,16 +33,15 @@ const BlogPage = () => {
               Apparently we had reached a great height in the atmosphere, for
               the sky was a dead black, and the{" "}
               <span className="md:block">
-                {" "}
                 stars had ceased to twinkle. By the same illusion which lifts
                 the horizon of the sea to the level of the
               </span>
             </p>
             <p className="opacity-70 text-[16px] font-medium leading-7 text-[#282938]">
-              {" "}
+
               spectator on a hillside.
             </p>
-            <ArrowBTN className={"mt-4 !text-[#2405F2]"}>Read more</ArrowBTN>
+           <Link to="/ReadMore"> <ArrowBTN className={"mt-4 !text-[#2405F2]"}>Read more</ArrowBTN></Link>
           </div>
         </div>
 

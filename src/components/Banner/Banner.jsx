@@ -3,6 +3,7 @@ import Button from "../Global/Button";
 import ArrowBTN from "./ArrowBTN";
 import BannerImg from "../../assets/BannerImg/Illustration.svg";
 
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <>
@@ -17,9 +18,9 @@ const Banner = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
               <div className=" mt-12">
-                <div className="flex  gap-10">
+                <div className="flex items-center gap-10">
                   <Button className="bg-[#FCD980] ">View our work</Button>
-                  <ArrowBTN>View Pricing</ArrowBTN>
+                  <Link to="/Pricing"><ArrowBTN>View Pricing</ArrowBTN></Link>
                 </div>
               </div>
             </div>
