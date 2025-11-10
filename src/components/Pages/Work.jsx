@@ -15,6 +15,7 @@ import TempImg3 from '../../assets/Work/Image3.png'
 import TempImg4 from '../../assets/Work/Image4.png'
 import TempImg5 from '../../assets/Work/Image5.png'
 import TempImg6 from '../../assets/Work/Image6.png'
+import Button from "../Global/Button";
 
 const Work = () => {
   return (
@@ -110,6 +111,19 @@ const Work = () => {
                 />
             </div>
           </div>
+          <div className="flex flex-col items-center py-32">
+            <Heading Heading={"Let's build something great together"} />
+            <Heading Heading={"together"} />
+            <div className="mt-5 mb-10 flex flex-col items-center">
+              <p className="text-[16px] font-medium leading-7 tex-[#282938] opacity-70">
+                Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies 
+              </p>
+              <p className="text-[16px] font-medium leading-7 tex-[#282938] opacity-70">
+                nec dolor sit amet, scelerisque cursus purus.
+              </p>
+            </div>
+            <Button className={'border-none !bg-[#FCD980]'}>Contact Us</Button>
+            </div>
         </div>
       </div>
     </>
