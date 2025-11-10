@@ -1,5 +1,6 @@
 import React from "react";
 import QuestionsBox from "./QuestionsBox";
+import { Link } from "react-router-dom";
 
 const Questions = () => {
   return (
@@ -10,7 +11,7 @@ const Questions = () => {
             Frequently <span className="md:block">asked questions</span>
           </h1>
           <p className="text-[18px] text-[#2405F2] font-medium leading-8 cursor-pointer hover:underline">
-            Contact us for more info
+            <Link to="/ContactUS">Contact us for more info </Link>
           </p>
         </div>
 

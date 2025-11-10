@@ -26,7 +26,7 @@ const Navbar = () => {
               <Link to="/AboutUs"> About us</Link>
             </li>
             <li className="hover:text-white cursor-pointer transition-colors duration-300">
-              <Link to="/"> Features</Link>
+              <Link to="/Features"> Features</Link>
             </li>
             <li className="hover:text-white cursor-pointer transition-colors duration-300">
               <Link to="/Pricing"> Pricing</Link>

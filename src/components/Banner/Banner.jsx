@@ -19,7 +19,7 @@ const Banner = () => {
               </p>
               <div className=" mt-12">
                 <div className="flex items-center gap-10">
-                  <Button className="bg-[#FCD980] ">View our work</Button>
+                 <Link to={"/Work"}> <Button className="bg-[#FCD980] ">View our work</Button></Link>
                   <Link to="/Pricing"><ArrowBTN>View Pricing</ArrowBTN></Link>
                 </div>
               </div>

@@ -11,9 +11,11 @@ import Nav from "./components/Navbar/Navbar";
 import AboutUs from "./components/Pages/AboutUs";
 import BlogPage from "./components/Pages/BlogPage";
 import ContactUs from "./components/Pages/ContactUs";
+import Features from "./components/Pages/Features";
 import Pricing from "./components/Pages/Pricing";
 import PrivacyAndPolicy from "./components/Pages/PrivacyAndPolicy";
 import ReadBlog from "./components/Pages/ReadBlog";
+import Work from "./components/Pages/Work";
 import Questions from "./components/questions/Questions";
 import Viewprojects from "./components/Viewourprojects/Viewprojects";
 
@@ -106,11 +108,33 @@ function App() {
         </>
       ),
     },
+    {
+      path: "/Features",
+      element: (
+        <>
+          <Nav />
+        <Features/>
+          <Footer />
+          <FooterCopy />
+        </>
+      ),
+    },
+    {
+      path: "/Work",
+      element: (
+        <>
+          <Nav />
+        <Work/>
+          <Footer />
+          <FooterCopy />
+        </>
+      ),
+    },
   ]);
 
   return (
     <>
-      <RouterProvider router={router} />;{/* <AboutUs /> */}
+      <RouterProvider router={router} />;
     </>
   );
 }
