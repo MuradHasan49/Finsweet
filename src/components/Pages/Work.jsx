@@ -16,6 +16,7 @@ import TempImg4 from '../../assets/Work/Image4.png'
 import TempImg5 from '../../assets/Work/Image5.png'
 import TempImg6 from '../../assets/Work/Image6.png'
 import Button from "../Global/Button";
+import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
@@ -67,8 +68,11 @@ const Work = () => {
               </a>
             </div>
           </div>
+      </div>
+      </div>
 
-          <div className="py-24">
+      <div className="container py-32">
+ <div className="py-24">
             <div className="flex flex-col items-center">
               <ul className="flex gap-8 text-[16px] font-medium leading-7 tex-[#282938] opacity-70">
                 <li className="hover:text-[#2405F2] cursor-pointer">All</li>
@@ -122,9 +126,9 @@ const Work = () => {
                 nec dolor sit amet, scelerisque cursus purus.
               </p>
             </div>
-            <Button className={'border-none !bg-[#FCD980]'}>Contact Us</Button>
+           <Link to={'/ContactUS'}> <Button className={'border-none !bg-[#FCD980]'}>Contact Us</Button></Link>
             </div>
-        </div>
+
       </div>
     </>
   );
