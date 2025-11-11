@@ -1,5 +1,6 @@
 import React from 'react'
 import ArrowBTN from '../Banner/ArrowBTN'
+import { Link } from 'react-router-dom'
 
 const Blogcard = ({src,Date,Head,p}) => {
   return (
@@ -10,7 +11,7 @@ const Blogcard = ({src,Date,Head,p}) => {
             <span className='mt-6 text-[16px] font-medium leading-7 text-[#282938] opacity-70'>{Date}</span>
             <h2 className='text-[26px] font-medium leading-9 text-[#282938]'>{Head}</h2>
             <p className='text[16px] leading-7 text-[#282938]'>{p}</p>
-            <ArrowBTN className="text-[16px] font-medium leading-7 !text-[#282938] ">Read More</ArrowBTN>
+           <Link to={"/ReadMore"}><ArrowBTN className="text-[16px] font-medium leading-7 !text-[#282938] ">Read More</ArrowBTN></Link> 
             </div>
       </div>
     </>

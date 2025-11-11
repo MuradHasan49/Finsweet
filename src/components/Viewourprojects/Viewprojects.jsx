@@ -3,6 +3,7 @@ import ArrowBTN from "../Banner/ArrowBTN";
 import Card from "../../assets/ViewProject/Card.png";
 import Card2 from "../../assets/ViewProject/Card2.png";
 import Card3 from "../../assets/ViewProject/Card3.png";
+import { Link } from "react-router-dom";
 
 const Viewprojects = () => {
   return (
@@ -13,7 +14,7 @@ const Viewprojects = () => {
             View our projects
           </h1>
           <ArrowBTN className="mb-5 md:mb-0 !text-[#282938] fill-current hover:!text-black">
-            View More
+            <Link to={"/Work"}>View More</Link>
           </ArrowBTN>
         </div>
 

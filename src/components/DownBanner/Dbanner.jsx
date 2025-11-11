@@ -1,6 +1,7 @@
 import React from "react";
 import BGimg from "../../assets/BannerImg/woman-writing-on-paper-3228878.png";
 import ArrowBTN from "../Banner/ArrowBTN";
+import { Link } from "react-router-dom";
 
 const Dbanner = () => {
   return (
@@ -88,7 +89,7 @@ const Dbanner = () => {
                         Send an Inquiry
                       </button>
                       <div className="py-5 mx-auto md:py-0">
-                      <ArrowBTN>Get in touch with us</ArrowBTN>
+                     <Link to={"/ContactUS"}> <ArrowBTN>Get in touch with us</ArrowBTN> </Link> 
                       </div>
                     </form>
                   </div>

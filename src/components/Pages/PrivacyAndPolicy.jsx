@@ -59,20 +59,20 @@ const PrivacyAndPolicy = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident.
               </p>
                 <ul className="list-disc list-inside">
-                  <li className="md:w-[842px] text-[16px] leading-7 opacity-70 text-[#282938]">
+                  <li className="md:w-[842px] md:text-[16px] leading-7 opacity-70 text-[#282938]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do.
                   </li>
-                  <li className="md:w-[842px] text-[16px] leading-7 opacity-70 text-[#282938]">
+                  <li className="md:w-[842px] md:text-[16px] leading-7 opacity-70 text-[#282938]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do.
                   </li>
-                  <li className="md:w-[842px] text-[16px] leading-7 opacity-70 text-[#282938]">
+                  <li className="md:w-[842px] md:text-[16px] leading-7 opacity-70 text-[#282938]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do.
                   </li>
                 </ul>
-                <p className="md:w-[842px] text-[16px] leading-7 opacity-70 text-[#282938]">
+                <p className="md:w-[842px] md:text-[16px] leading-7 opacity-70 text-[#282938]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
                 </p>
             </div>

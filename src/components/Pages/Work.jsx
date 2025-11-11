@@ -33,7 +33,7 @@ const Work = () => {
                 We help teams create great digital products by providing them
                 with tools and technology
               </p>
-              <p className="text-[16px] font-medium leading-7 tex-[#282938] opacity-70">
+              <p className=" text-[16px] font-medium leading-7 tex-[#282938] opacity-70">
                 to make the design-to-code process universally accessible.
               </p>
             </div>

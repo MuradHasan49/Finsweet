@@ -31,7 +31,7 @@ const Pricing = () => {
         className={`opacity-0`}
         />
         <PricingCard
-         Price={"$299"}
+         Price={"$499 + "}
         Perdesign={"Per Design"}
         Heding={"Complex Project"}
         p={"When you’re ready to go beyond prototyping in Figma, "}

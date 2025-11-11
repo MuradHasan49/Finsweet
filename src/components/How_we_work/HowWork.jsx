@@ -5,6 +5,7 @@ import pointer1 from "../../assets/HowWork/pointer1.png"
 import pointer2 from "../../assets/HowWork/pointer2.png"
 import pointer3 from "../../assets/HowWork/pointer3.png"
 import pointer4 from "../../assets/HowWork/pointer4.png"
+import { Link } from "react-router-dom";
 
 const HowWork = () => {
   return (
@@ -20,7 +21,7 @@ const HowWork = () => {
               Lorem ipsum dolor sit amet, consectetur <span className="block">adipiscing elit, sed do
               eiusmod tempor.</span>
             </p>
-            <ArrowBTN className={`!text-[#2405F2] text-[18px] leading-8 font-medium`}>Get in touch with us</ArrowBTN>
+          <Link to="/ContactUS">  <ArrowBTN className={`!text-[#2405F2] text-[18px] leading-8 font-medium`}>Get in touch with us</ArrowBTN></Link>
           </div>
           <div className="grid grid-cols-2 gap-2">
             <Box src={pointer1} h1={"Strategy"} />
