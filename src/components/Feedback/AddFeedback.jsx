@@ -23,7 +23,7 @@ function SamplePrevArrow({ onClick }) {
       onClick={onClick}
       className="opacity-0 md:opacity-100 absolute top-[200px] left-[610px] flex justify-center items-center w-10 h-10 rounded-full z-10 cursor-pointer hover:bg-[#5239FA]  group"
     >
-      <span className="text-white text-xl font-bold"><IoIosArrowBack className="text-black group-hover:text-white" /></span>
+      {/* <span className="text-white text-xl font-bold"><IoIosArrowBack className="text-black group-hover:text-white" /></span> */}
     </div>
   );
 }
