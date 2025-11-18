@@ -5,7 +5,7 @@ import App from './App.jsx'
 
 import AboutUs from "./components/Pages/AboutUs";
 import BlogPage from "./components/Pages/BlogPage";
-import Connect from "./components/Pages/ContactUs.jsx"
+import ContactUs from "./components/Pages/ContactUs.jsx"
 import Features from "./components/Pages/Features";
 import Pricing from "./components/Pages/Pricing";
 import PrivacyAndPolicy from "./components/Pages/PrivacyAndPolicy";
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       { path: "Pricing", Component: Pricing },
       { path: "Blog", Component: BlogPage },
       { path: "ReadMore", Component: ReadBlog },
-      { path: "Connect", Component: Connect },
+      { path: "ContactUs", Component: ContactUs },
       { path: "Work", Component: Work },
     ]
   },
